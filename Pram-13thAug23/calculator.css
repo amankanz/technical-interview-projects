@@ -1,0 +1,73 @@
+/*CSS RESET*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*colors*/
+:root {
+  --bgcolor: #96B6C5; 
+  --themeColor: #900C3F;
+  --textColor: #F1F0E8;
+}
+
+body {
+  background-color: var();
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0;
+}
+
+/*=== CALCULATOR ===*/
+.container {
+  background-color: var(--bgcolor);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2em;
+  color: #F94C10;
+}
+h3 {
+  font-size: 1.6rem;
+  color: var(--themeColor);
+}
+
+button, input {
+  font-size: 2rem;
+  padding: 1.2em;
+  border: none;
+}
+
+input {
+  background-color: var(--themeColor);
+  color: var(--textColor);
+}
+button {
+  margin: .5em .1em;
+  color: var(--textColor);
+  background-color: var(--themeColor);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #F8DE22;
+  color: var(--themeColor);
+}
+
+.clearResult {
+  background-color: #C70039;
+}
+
+.calculateResult {
+  background-color: #F94C10;
+}

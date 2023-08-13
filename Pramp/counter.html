@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* --------------------
+     Add your styling here
+     -------------------- */
+     .counter{
+        color: "#fff";
+        background-color: "#000";
+        padding: 10px;
+        border-radius: 7px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <!----------------------
+      Add your markup here
+      ------------------------>
+    <span class="counter"></span>
+  </div>
+
+
+  <script>
+    let counter = document.querySelector(".counter");
+    let count = 0;
+    
+    function setCounter (){
+      for (let i = count; i <= 59; i++ ){
+        console.log(i)
+        counter.innerHTML += count
+      }      
+      setCounter;
+    }
+    
+    setCounter();
+      /* --------------------
+      Add your code here
+      --------------------- */
+  </script>
+</body>
+</html>
